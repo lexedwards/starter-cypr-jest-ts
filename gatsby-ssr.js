@@ -1,4 +1,3 @@
-/* eslint-disable react/display-name */
 // gatsby-*.js files run in NodeJS
 const React = require('react')
 const Layout = require('./src/components/Layout').default
