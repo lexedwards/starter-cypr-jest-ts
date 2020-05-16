@@ -1,0 +1,53 @@
+{
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "classes": true,
+      "jsx": true
+    }
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "eslint-config-prettier",
+    "eslint-config-prettier/@typescript-eslint"
+  ],
+  "rules": {
+    "strict": ["error", "never"],
+    "react/prop-types": "off",
+    "@typescript-eslint/explicit-function-return-type": "off"
+  },
+  "plugins": ["@typescript-eslint/eslint-plugin"],
+  "overrides": [
+    {
+      "files": ["jest*.js"],
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off"
+      }
+    },
+    {
+      "files": ["*gatsby*.js"],
+      "rules": {
+        "@typescript-eslint/camelcase": "off",
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/no-unused-vars": "off"
+      }
+    }
+  ]
+}

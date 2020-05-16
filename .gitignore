@@ -16,6 +16,8 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
+cypress/videos
+cypress/screenshots
 
 # nyc test coverage
 .nyc_output

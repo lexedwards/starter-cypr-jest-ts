@@ -1,7 +1,17 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
+/* eslint-disable react/display-name */
+// gatsby-*.js files run in NodeJS
+const React = require('react')
+const Layout = require('./src/components/Layout').default
 
-// You can delete this file if you're not using it
+exports.wrapPageElement = ({element, props}) => {
+  return <Layout {...props}>{element}</Layout>
+}
+
+exports.onClientEntry = () => {
+  const vh = window.innerHeight * 0.01
+  document.documentElement.style.setProperty('--vh', `${vh}px`)
+  window.addEventListener('resize', () => {
+    const vh = window.innerHeight * 0.01
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
+  })
+}

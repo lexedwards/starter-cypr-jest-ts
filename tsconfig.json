@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": ["dom", "ES2020", "dom.iterable", "scripthost"],
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "removeComments": true,
+    "noEmitOnError": true,
+    "jsx": "react",
+    "strict": true,
+
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "baseUrl": "./src",
+    "esModuleInterop": true,
+    "experimentalDecorators": true
+  },
+  "exclude": ["node_modules", "public", ".cache"]
+}
