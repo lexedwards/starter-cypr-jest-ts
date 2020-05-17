@@ -22,6 +22,7 @@
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.8.3",
+    "@babel/types": "^7.9.6",
     "@testing-library/cypress": "^6.0.0",
     "@testing-library/jest-dom": "^5.7.0",
     "@testing-library/react": "^10.0.4",
@@ -60,7 +61,7 @@
     "start-server-and-test": "^1.10.8",
     "test-data-bot": "^0.8.0",
     "ts-jest": "^26.0.0",
-    "typescript": "^3.5.3"
+    "typescript": "^3.9.2"
   },
   "keywords": [
     "gatsby",
@@ -87,6 +88,7 @@
     "pretest:e2e:run": "npm run build",
     "test:e2e:run": "start-server-and-test start http://localhost:8000 cy:run",
     "test:e2e:dev": "start-server-and-test develop http://localhost:8000 cy:open",
+    "type-check": "tsc --pretty --noEmit",
     "lint": "jest --config test/jest.lint.js",
     "validate": "npm run test:coverage && npm run test:e2e:run"
   },
