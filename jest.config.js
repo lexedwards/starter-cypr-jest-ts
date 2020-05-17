@@ -1,10 +1,10 @@
 module.exports = {
   ...require('./test/jest-common'),
-  collectCoverageFrom: [
-    '**/src/**/*.js',
-    '!**/__tests__/**',
-    '!**/__server_tests__/**',
-    '!**/node_modules/**',
+  collectCoverageFrom: ['<rootDir>/src/**/*.{js,jsx|ts|tsx}'],
+  coveragePathIgnorePatterns: [
+    '/node_modules/',
+    '**/__tests__/**',
+    '**/public/**',
   ],
   coverageThreshold: {
     global: {

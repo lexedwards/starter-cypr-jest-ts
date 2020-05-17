@@ -1,17 +1,16 @@
 {
   "compilerOptions": {
+    "allowJs": true,
     "noEmit": true,
     "target": "esnext",
-    "module": "commonjs",
+    "module": "esnext",
     "lib": ["dom", "ES2020", "dom.iterable", "scripthost"],
     "sourceMap": true,
-    "outDir": "./dist",
     "rootDir": "./src",
     "removeComments": true,
     "noEmitOnError": true,
     "jsx": "react",
     "strict": true,
-
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
