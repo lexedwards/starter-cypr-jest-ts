@@ -8,10 +8,10 @@ module.exports = {
   ],
   coverageThreshold: {
     global: {
-      statements: 15,
-      branches: 10,
-      functions: 15,
-      lines: 15,
+      statements: 0,
+      branches: 0,
+      functions: 0,
+      lines: 0,
     },
   },
   projects: ['./test/jest.lint.js', './test/jest.client.js'],
