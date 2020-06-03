@@ -1,6 +1,7 @@
 module.exports = {
   ...require('./test/jest-common'),
-  collectCoverageFrom: ['<rootDir>/src/**/*.{js,jsx|ts|tsx}'],
+  collectCoverageFrom: ['<rootDir>/src/**/*.{js,jsx,ts,tsx}'],
+  coverageDirectory: 'coverage/jest-coverage',
   coveragePathIgnorePatterns: [
     '/node_modules/',
     '**/__tests__/**',

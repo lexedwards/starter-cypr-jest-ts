@@ -5,5 +5,5 @@ module.exports = {
   displayName: 'lint',
   runner: 'jest-runner-eslint',
   testMatch: ['<rootDir>/**/*.js'],
-  testPathIgnorePatterns: ['/node_modules/', '/public/'],
+  testPathIgnorePatterns: ['/node_modules/', '/public/', '/coverage/'],
 }
